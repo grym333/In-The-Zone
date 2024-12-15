@@ -1,0 +1,28 @@
+// InTheZone.Domain (Example Entity)
+public class Game
+{
+    public int GameId { get; set; }
+    // ... other properties
+}
+
+// InTheZone.Application (Example Interface)
+public interface IGameService
+{
+    Task<Game> GetGameByIdAsync(int gameId);
+}
+
+// InTheZone.Infrastructure (Example Implementation)
+public class GameService : IGameService
+{
+    private readonly IGameRepository _gameRepository; // From InTheZone.Infrastructure.Data
+
+    public GameService(IGameRepository gameRepository)
+    {
+        _gameRepository = gameRepository;
+    }
+
+    public async Task<Game> GetGameByIdAsync(int gameId)
+    {
+        return await _gameRepository.GetGameByIdAsync(gameId);
+    }
+}
