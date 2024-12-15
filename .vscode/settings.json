@@ -1,3 +1,6 @@
 {
-    "dotnet.defaultSolution": "In The Zone.sln"
+    "dotnet.defaultSolution": "In The Zone.sln",
+    "projectManager.git.baseFolders": [
+        "In-The-Zone"
+    ]
 }
