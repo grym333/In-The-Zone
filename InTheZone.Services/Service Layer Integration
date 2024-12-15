@@ -1,0 +1,25 @@
+public class GameVisualizationService : IGameVisualizationService
+{
+    private readonly IMlbStatsApiProxy _mlbStatsApiProxy;
+    // ... other dependencies ...
+
+    public GameVisualizationService(IMlbStatsApiProxy mlbStatsApiProxy, /* ... other dependencies ... */)
+    {
+        _mlbStatsApiProxy = mlbStatsApiProxy;
+        // ... other initializations ...
+    }
+
+    public async Task<List<GameEvent>> GetHomeRunsForDateAsync(DateTime date)
+    {
+        try
+        {
+            // Directly call the method without parameters, as they are handled within the method
+            return await _mlbStatsApiProxy.GetHomeRunsByDateAsync(date);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError($"Error fetching home runs for {date}: {ex.Message}");
+            throw; // Or handle the exception as appropriate for your application
+        }
+    }
+}

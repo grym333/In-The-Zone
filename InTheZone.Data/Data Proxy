@@ -1,0 +1,59 @@
+public interface IMlbStatsApiProxy
+{
+    public async Task<List<GameEvent>> GetHomeRunsByDateAsync(DateTime date)
+{
+    // Create query parameters
+    var queryParameters = new NameValueCollection();
+    queryParameters.Add("date", date.ToString("yyyy-MM-dd"));
+    queryParameters.Add("eventTypes", "home_run");
+
+    // Construct endpoint with query parameters, hydrates, and fields
+    string formattedDate = date.ToString("yyyy-MM-dd"); // Format the date as required by the API
+    string endpoint = $"/api/v1/schedule?sportId=1&date={formattedDate}&eventTypes=home_run&hydrate=game(game_id,allplays(playevents,result,atBatIndex)),homerun";
+
+    // Call the GetAsync method, and pass the constructed endpoint
+    var gameSchedule = await GetAsync<ScheduleRestObject>(endpoint, new NameValueCollection());
+
+    var homerunList = new List<GameEvent>();
+
+    foreach (var gameDate in gameSchedule.dates)
+    {
+        foreach (var game in gameDate.games)
+        {
+            foreach (var play in game.liveData.plays.allPlays)
+            {
+                foreach (var playEvent in play.playEvents)
+                {
+                    if (playEvent.isPitch && playEvent.details.eventType == "home_run")
+                    {
+                        // Assuming the home run information is inside playEvents
+                        var homeRunEvent = new GameEvent
+                        {
+                            GameDate = date, // Set the game date
+                            Team = play.matchup?.battingTeam?.name ?? "", // Get the batting team's name
+                            GameId = game.gamePk, // Get the game ID
+                            PlayerId = play.matchup?.batter?.id ?? 0, // Get the batter's ID
+                            PlayerName = play.matchup?.batter?.fullName ?? "", // Get the batter's full name
+                            Title = "Home Run by " + play.matchup?.batter?.fullName, // Example title
+                            Description = playEvent.details?.description ?? "", // Get the play-by-play description
+                            ExitVelocity = playEvent.hitData?.launchSpeed ?? 0, // Get the exit velocity of the hit
+                            LaunchAngle = playEvent.hitData?.launchAngle ?? 0, // Get the launch angle of the hit
+                            HitDistance = playEvent.hitData?.totalDistance ?? 0, // Get the total distance of the hit
+                            // Video = "URL_TO_VIDEO", // Replace with actual video URL if available
+                            Opponent = play.matchup?.pitchingTeam?.name ?? "", // Get the pitching team's name
+                            Inning = play.about.inning, // Get the inning number
+                            IsHomeTeamBatter = play.about.isTopInning == false // Determine if the batter is from the home team
+                        };
+
+                        homerunList.Add(homeRunEvent);
+                    }
+                }
+            }
+        }
+    }
+    
+    return homerunList;
+}
+    // ... existing methods ...
+    Task<List<GameEvent>> GetHomeRunsByDateAsync(DateTime date);
+}

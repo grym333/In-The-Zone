@@ -1,0 +1,39 @@
+[HttpGet("homeruns/{date}")]
+public async Task<IActionResult> GetHomeRuns(DateTime date)
+{
+    public async Task<IActionResult> GetGameDataWithQuantumWaiting(int gameId)
+{
+    var data = await _gameVisualizationService.GetGameDataAsync(gameId);
+
+    if (data == null)
+    {
+        // Initiate an asynchronous task that will try to get the best data
+        var bestDataTask = Task.Run(async () =>
+        {
+            object bestData = null;
+            while (bestData == null) // Replace with a more robust check if needed
+            {
+                await Task.Delay(TimeSpan.FromSeconds(5)); // Wait 5 seconds (adjust as needed)
+                bestData = await _gameVisualizationService.GetBestPossibleGameDataAsync(gameId);
+            }
+            return bestData;
+        });
+
+        // Return a "promise" (e.g., a custom object or an anonymous type)
+        return Ok(new { Status = "WaitingForData", Promise = bestDataTask.ContinueWith(t => Url.Action("GetGameData", new { gameId })) });
+    }
+
+    return Ok(data);
+}
+
+    try
+    {
+        var homeRuns = await _gameVisualizationService.GetHomeRunsForDateAsync(date);
+        return Ok(homeRuns); // Return the home runs data
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError($"Error getting home runs for {date}: {ex.Message}");
+        return StatusCode(500, "Internal server error"); // Or handle differently
+    }
+}

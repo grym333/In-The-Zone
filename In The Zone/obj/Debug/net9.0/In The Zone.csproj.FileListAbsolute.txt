@@ -1,0 +1,98 @@
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\bin\Debug\net9.0\appsettings.json
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\bin\Debug\net9.0\In The Zone.staticwebassets.runtime.json
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\bin\Debug\net9.0\In The Zone.staticwebassets.endpoints.json
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\bin\Debug\net9.0\In The Zone.exe
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\bin\Debug\net9.0\In The Zone.deps.json
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\bin\Debug\net9.0\In The Zone.runtimeconfig.json
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\bin\Debug\net9.0\In The Zone.dll
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\bin\Debug\net9.0\In The Zone.pdb
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\In The Zone.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\In The Zone.AssemblyInfoInputs.cache
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\In The Zone.AssemblyInfo.cs
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\In The Zone.csproj.CoreCompileInputs.cache
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\In The Zone.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\In The Zone.RazorAssemblyInfo.cache
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\In The Zone.RazorAssemblyInfo.cs
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\In The Zone.sourcelink.json
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\scopedcss\bundle\In The Zone.styles.css
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\scopedcss\projectbundle\In The Zone.bundle.scp.css
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\pzigxbe2vo-b9sayid5wm.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\mjxfh551cg-61n19gt1b8.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\1xmlqvlvnt-xtxxf3hu2r.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\gq96blw0t5-bqjiyaj88i.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\8kjjerkrib-c2jlpeoesf.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\sqsjxkx6oy-erw9l3u2r3.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\fxypjnwssh-aexeepp0ev.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\6izd3jofm2-d7shbmvgxk.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\9zhq3w8u3y-ausgxo2sd3.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\ph4zgcu7mi-k8d9w2qqmf.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\izkzsquo7m-cosvhxvwiu.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\wew48pl2m3-ub07r2b239.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\hkbioq89l8-fvhpjtyr6v.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\buzhyhppck-b7pk76d08c.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\4wwcfx7wwb-fsbi9cje9m.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\nd9706vvr7-rzd6atqjts.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\xwsr10gkkw-ee0r1s7dh0.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\2ejqo6h2ko-dxx9fxp4il.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\9pn80oogzm-jd9uben2k1.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\j2cq0c9yij-khv3u5hwcm.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\larc0wjf7n-r4e9w2rdcm.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\1z3bv6epj6-lcd1t2u6c8.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\b5pcpkwech-c2oey78nd0.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\3h4plsr4b1-tdbxkamptv.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\veyitq5jpq-j5mq2jizvt.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\uxyzf7pkio-06098lyss8.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\6jruutcb8e-nvvlpmu67g.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\uxysgs7o72-s35ty4nyc5.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\enczadano3-pj5nd1wqec.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\b910bqsxmd-46ein0sx1k.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\efmg8e0ml5-v0zj4ognzu.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\0hrnpc1s9j-37tfw0ft22.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\5o2vodz9ji-hrwsygsryq.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\w5i4b4h59n-pk9g2wxc8p.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\kgprrn05h7-ft3s53vfgj.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\wwz888y41z-6cfz1n2cew.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\a8d6a0x3l0-6pdc2jztkx.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\4x2vz3qvxz-493y06b0oq.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\73v3anc7zo-iovd86k7lj.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\d36bk6hdab-vr1egmr9el.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\s3hwpe6m3i-kbrnm935zg.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\m080gxmx1i-jj8uyg4cgr.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\946dk187nz-y7v9cxd14o.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\adm9scixyw-notf2xhcfb.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\fvlwqcn0rl-h1s4sie4z3.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\4uwpfjqorn-63fj8s7r0e.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\99wxjmi424-0j3bgjxly4.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\w5yg1y8ijz-47otxtyo56.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\dl3z7dgmza-4v8eqarkd7.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\7casu5idc6-356vix0kms.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\d54rjthz0w-83jwlth58m.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\nxby23cku2-mrlpezrjn3.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\1gvb1t0liy-lzl9nlhx6b.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\u9gfctfuei-ag7o75518u.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\3ctr72l66c-x0q3zqp4vz.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\w43k73kfkp-0i3buxo5is.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\s5bxz2353i-o1o13a6vjx.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\hcdz4h60ht-ttgo8qnofa.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\sef66ukgu6-2z0ns9nrw6.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\mirerpswrz-muycvpuwrr.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\pn6ab3cc4y-87fc7y1x7t.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\lrgo2151yi-mlv21k5csn.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\iyx5e0aw61-s1b3ohjzkq.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\compressed\lll6ngwruh-s1b3ohjzkq.gz
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\staticwebassets\msbuild.In The Zone.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\staticwebassets\msbuild.In The Zone.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\staticwebassets\msbuild.build.In The Zone.props
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.In The Zone.props
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.In The Zone.props
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\In The Zone.dll
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\refint\In The Zone.dll
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\In The Zone.pdb
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\In The Zone.genruntimeconfig.cache
+C:\Users\nasty\OneDrive\Documents\GitHub\In-The-Zone\In The Zone\obj\Debug\net9.0\ref\In The Zone.dll

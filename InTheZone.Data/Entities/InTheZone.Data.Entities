@@ -1,0 +1,20 @@
+namespace InTheZone.Data.Entities
+{
+    public class GameEvent
+    {
+        public DateTime GameDate { get; set; }
+        public string Team { get; set; }
+        public int GameId { get; set; }
+        public int PlayerId { get; set; }
+        public string PlayerName { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public double ExitVelocity { get; set; }
+        public double LaunchAngle { get; set; }
+        public double HitDistance { get; set; }
+        public string Video { get; set; }
+        public string Opponent { get; set; }
+        public int Inning { get; set; }
+        public bool IsHomeTeamBatter { get; set; }
+    }
+}
