@@ -11,5 +11,6 @@
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
     "python.linting.flake8Enabled": false,
-    "python.linting.mypyEnabled": false
+    "python.linting.mypyEnabled": false,
+    "wake.compiler.solc.remappings": []
 }

@@ -1,0 +1,47 @@
+// InTheZone.Web.Controllers
+
+[ApiController]
+[Route("[controller]")]
+public class GamesController : ControllerBase
+{
+    private readonly IGameVisualizationService _gameVisualizationService;
+    private readonly ISecurityManager _securityManager;
+
+    public GamesController(IGameVisualizationService gameVisualizationService, ISecurityManager securityManager)
+    {
+        _gameVisualizationService = gameVisualizationService;
+        _securityManager = securityManager;
+    }
+
+    [HttpGet("{gameId}")]
+    public async Task<IActionResult> GetGameVisualization(int gameId)
+    {
+        var gameData = await _gameVisualizationService.GetGameDataAsync(gameId);
+
+        if (gameData == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(gameData); // Assume this returns the necessary data for visualization
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateGameVisualization([FromBody] GameVisualizationRequest request)
+    {
+        // Security Check
+        if (!ModelState.IsValid || !_securityManager.IsUserAuthorized(request.UserId))
+        {
+            return Unauthorized();
+        }
+
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
+        var gameId = await _gameVisualizationService.CreateGameAsync(request);
+
+        return CreatedAtAction(nameof(GetGameVisualization), new { gameId = gameId }, null);
+    }
+}
