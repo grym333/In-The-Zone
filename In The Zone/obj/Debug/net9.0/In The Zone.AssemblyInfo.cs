@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("In The Zone")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+129d56d25c816a54a23244688b886c7c84834f86")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b619c4c5039e27a0d6ec335f77c5c17d395d790")]
 [assembly: System.Reflection.AssemblyProductAttribute("In The Zone")]
 [assembly: System.Reflection.AssemblyTitleAttribute("In The Zone")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
