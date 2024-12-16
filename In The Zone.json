@@ -1,97 +1,107 @@
-[
-  {
-    "prompt": "Develop the \"In The Zone\" web application, a real-time visualization tool for MLB games, incorporating quantum-inspired concepts for enhanced security and data handling.",
-    "instructions": {
-      "core_functionality": [
-        "Real-time strike zone visualization.",
-        "3D pitch trajectory tracking.",
-        "Player performance analysis with historical data comparisons.",
-        "Fan interaction features (polls, heatmaps, social sharing)."
-      ],
-      "quantum_inspired_security": [
-        {
-          "data_proxies": "Use data proxies to access the Stats API and GUMBO feeds, ensuring that sensitive data is not directly exposed."
-        },
-        {
-          "probabilistic_validation": "Implement probabilistic validation for data retrieved from the Stats API and GUMBO feeds, acknowledging that data might not always be absolute."
-        },
-        {
-          "secure_code_execution": "Use Docker containers to sandbox any dynamically generated code or user-provided scripts."
-        },
-        {
-          "contextual_sanitization": "Implement contextual sanitization for all user inputs, including form data, comments, and social media shares."
-        },
-        {
-          "quantum_waiting": "For asynchronous operations, simulate a \"quantum waiting\" concept where the application returns a \"promise\" that resolves when the best possible data is available."
-        },
-        {
-          "entanglement": "Model relationships between different code components and data using dependency injection and graph structures."
+{
+  "quantumSecurity": {
+    "dataProxies": {
+      "mlbStatsApi": {
+        "description": "Configuration for MLB Stats API proxy.",
+        "basePath": "/api/v1/",
+        "implementation": "MlbStatsApiProxy",
+        "notes": "Ensure probabilistic validation within GetAsync method."
+      },
+      "gumboFeed": {
+        "description": "Configuration for GUMBO data feed proxy.",
+        "basePath": "/api/v1.1/game/",
+        "implementation": "GumboDataProxy",
+        "notes": "Implement secure access, abstract sensitive data."
+      }
+    },
+    "probabilisticValidation": {
+      "enabled": true,
+      "threshold": 0.95,
+      "notes": "Validate data integrity in data proxies. Example: 95% confidence threshold."
+    },
+    "secureCodeExecution": {
+      "docker": {
+        "useContainers": true,
+        "container": "InTheZone.Data"
+      },
+      "notes": "Use Docker containers for dynamic code execution. Configure Docker.DotNet in application."
+    },
+    "contextualSanitization": {
+      "input": {
+        "description": "Sanitize all user inputs in the Web project's controllers.",
+        "notes": "Implement input validation for expected formats (e.g., int, string, date)."
+      },
+      "output": {
+        "description": "Encode all dynamic content in views to prevent XSS.",
+        "notes": "Use HtmlEncoder in Razor Pages or Blazor components."
+      }
+    },
+      "quantumWaiting": {
+          "enabled": true,
+          "promise": {
+            "delay": 5000,
+            "maxRetries": 3,
+            "timeout": 30000
         }
-      ],
-      "security_best_practices": [
-        {
-          "input_validation": "Validate all user inputs against expected formats and types."
-        },
-        {
-          "output_sanitization": "Sanitize all outputs to prevent cross-site scripting (XSS) vulnerabilities."
-        },
-        {
-          "secure_data_storage": "Use secure storage mechanisms for sensitive data, such as API keys and user credentials."
-        },
-        {
-          "authentication": "Implement robust authentication mechanisms to protect user accounts."
-        },
-        {
-          "authorization": "Implement authorization checks to ensure that users can only access the data and features they are authorized to use."
-        },
-        {
-          "logging": "Implement comprehensive logging for all security-related events and errors."
+    },
+     "entanglement": {
+          "dependencyInjection": true,
+          "graphStructures": true,
+          "notes": "Utilize dependency injection in InTheZone.Services. Configure in Startup.cs or Program.cs. Use graph-like data structures for relationships where appropriate."
         }
-      ],
-      "google_ai_studio_integration": [
-        "Use Google AI Studio's quantum simulation tools to represent quantum concepts.",
-        "Integrate with Vertex AI for machine learning tasks (e.g., pitch prediction, player performance analysis).",
-        "Use Google Cloud Storage for data storage and retrieval.",
-        "Utilize Google Cloud APIs for data processing and communication."
-      ],
-      "code_structure": "Organize the code into a modular structure with clear layers and interfaces, using C# as the primary language.",
-      "testing": [
-        "Unit tests for individual modules.",
-        "Integration tests for testing the interaction between modules.",
-        "End-to-end tests for testing the overall system.",
-        "Fuzz tests for security vulnerabilities.",
-        "Performance tests for measuring the application's performance."
-      ],
-      "documentation": "Provide clear documentation for the application, including API descriptions, usage examples, and security considerations.",
-      "specific_tasks": [
-        {
-          "data_layer": "Implement data proxies for accessing the Stats API and GUMBO feeds."
+  },
+  "googleAiIntegration": {
+    "vertexAi": {
+      "projectId": "your-gcp-project-id",
+      "location": "us-central1",
+      "endpointId": "your-vertex-ai-endpoint-id"
+    },
+    "cloudStorage": {
+      "bucketName": "your-gcp-bucket-name"
+    }
+  },
+    "generalSecurity": {
+      "authentication": {
+          "scheme": "Cookie",
+          "cookieName": "AuthCookie",
+          "loginPath": "/Login",
+          "logoutPath": "/Logout",
+          "accessDeniedPath": "/AccessDenied",
+          "slidingExpiration": true,
+          "ExpireTimeSpan": "00:30:00"
         },
-        {
-          "security_layer": "Implement the SecurityManager with contextual sanitization, Docker sandboxing, and probabilistic validation."
-        },
-        {
-          "ui_layer": "Develop the user interface with asynchronous updates and robust input validation."
-        },
-        {
-          "visualization_layer": "Implement the 3D pitch trajectory tracking and strike zone visualization using D3.js or similar."
-        },
-        {
-          "application_logic": "Implement the core application logic, including data processing, player performance analysis, and fan interaction features."
-        },
-        {
-          "testing": "Implement the testing framework and write tests for each module and feature."
-        },
-        {
-          "google_integration": "Integrate with Google AI Studio, Vertex AI, and other relevant Google Cloud services."
-        }
-      ],
-      "expected_outcome": "A functional web application that provides fans with real-time visualizations of MLB games, while incorporating quantum-inspired concepts for enhanced security and data handling. The application should be robust, secure, and performant, and should be well-documented.",
-      "additional_notes": [
-        "Use the provided MLB Stats API documentation and the 2024 homeruns dataset as resources.",
-        "Focus on creating a user-friendly and engaging experience for fans.",
-        "Be creative and innovative in your approach to implementing the \"quantum\" concepts."
+    "authorization": {
+      "roleBased": true,
+      "roles": [
+        { "name": "Admin", "policy": "AdminOnly" },
+        { "name": "User", "policy": "UserAccess" }
+      ]
+    },
+    "dataProtection": {
+      "useDataProtection": true,
+      "applicationName": "InTheZoneApp"
+    },
+    "rateLimiting": {
+      "enableRateLimiting": true,
+      "policy": "FixedWindow",
+      "permitLimit": 100,
+      "window": "00:01:00",
+      "queueLimit": 50,
+      "segmentsPerWindow": 6,
+      "excludedEndpoints": [
+        "/api/open",
+        "/healthcheck"
       ]
     }
+  },
+  "testing": {
+      "unitTests": true,
+      "integrationTests": true,
+      "endToEndTests": true,
+      "fuzzTests": true,
+      "performanceTests": true
+    },
+  "data": {
+    "homeruns2024": "2024-mlb-homeruns.csv"
+    }
   }
-]

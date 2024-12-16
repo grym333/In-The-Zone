@@ -5,7 +5,6 @@ namespace InTheZone.Data.Entities
         public int Id { get; set; } // Primary Key
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string FullName { get; set; } // Add this property for the full name
         public int JerseyNumber { get; set; }
         public DateTime BirthDate { get; set; }
         public string Position { get; set; }
@@ -77,3 +76,30 @@ namespace InTheZone.Data.Entities
         public bool IsHomeTeamBatter { get; set; }
     }
 }
+public class Pitch
+    {
+        public int Id { get; set; }
+        public int GameId { get; set; }
+        public int Inning { get; set; }
+        public int BatterId { get; set; }
+        public int PitcherId { get; set; }
+        public string PitchType { get; set; }
+        public double Velocity { get; set; }
+        public double SpinRate { get; set; }
+        // ... other pitch properties
+        public Game Game { get; set; }
+        public Player Batter { get; set; }
+        public Player Pitcher { get; set; }
+    }
+
+    public class Inning
+    {
+        public int Id { get; set; }
+        public int GameId { get; set; }
+        public int InningNumber { get; set; }
+        public int HomeTeamScore { get; set; }
+        public int AwayTeamScore { get; set; }
+        // ... other inning properties
+        public Game Game { get; set; }
+        public List<Pitch> Pitches { get; set; }
+    }

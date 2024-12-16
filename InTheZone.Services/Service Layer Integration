@@ -23,3 +23,10 @@ public class GameVisualizationService : IGameVisualizationService
         }
     }
 }
+    private readonly ILogger<GameVisualizationService> _logger;
+
+    public GameVisualizationService(IMlbStatsApiProxy mlbStatsApiProxy, ILogger<GameVisualizationService> logger)
+    {
+        _mlbStatsApiProxy = mlbStatsApiProxy;
+        _logger = logger;
+    }

@@ -7,3 +7,6 @@
   </PropertyGroup>
 
 </Project>
+  <ItemGroup>
+    <ProjectReference Include="..\InTheZone.Data\InTheZone.Data.csproj" />
+  </ItemGroup>

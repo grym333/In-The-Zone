@@ -57,3 +57,33 @@ public interface IMlbStatsApiProxy
     // ... existing methods ...
     Task<List<GameEvent>> GetHomeRunsByDateAsync(DateTime date);
 }
+public class MlbStatsApiProxy : IMlbStatsApiProxy
+{
+    private readonly HttpClient _httpClient;
+
+    public MlbStatsApiProxy(HttpClient httpClient)
+    {
+        _httpClient = httpClient;
+    }
+
+    public async Task<T> GetAsync<T>(string endpoint, NameValueCollection queryParameters)
+    {
+        var uriBuilder = new UriBuilder("https://statsapi.mlb.com" + endpoint);
+        var query = HttpUtility.ParseQueryString(uriBuilder.Query);
+        foreach (string key in queryParameters.AllKeys)
+        {
+            query[key] = queryParameters[key];
+        }
+        uriBuilder.Query = query.ToString();
+
+        var request = new HttpRequestMessage(HttpMethod.Get, uriBuilder.Uri);
+        var response = await _httpClient.SendAsync(request);
+        response.EnsureSuccessStatusCode();
+
+        var json = await response.Content.ReadAsStringAsync();
+        return JsonConvert.DeserializeObject<T>(json);
+    }
+
+    // ... existing methods ...
+
+}

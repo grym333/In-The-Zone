@@ -23,5 +23,36 @@ namespace InTheZone.Data
         }
     }
 
-    JerseyNumber
+    public class JerseyNumber
+    {
+        public int Id { get; set; }
+        public int Number { get; set; }
+        public int PlayerId { get; set; }
+        public Player Player { get; set; }
+    }
 }
+    public class GameRepository : IGameRepository
+    {
+        private readonly ApplicationDbContext _context;
+
+        public GameRepository(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<List<Game>> GetAllGamesAsync()
+        {
+            return await _context.Games.ToListAsync();
+        }
+
+        public async Task<Game> GetGameByIdAsync(int id)
+        {
+            return await _context.Games.FindAsync(id);
+        }
+    }
+
+    public interface IGameRepository
+    {
+        Task<List<Game>> GetAllGamesAsync();
+        Task<Game> GetGameByIdAsync(int id);
+    }

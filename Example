@@ -1,28 +1,63 @@
 // InTheZone.Domain (Example Entity)
 public class Game
 {
-    public int GameId { get; set; }
+    public int Id { get; set; }
     // ... other properties
+    public string Name { get; set; }
 }
 
 // InTheZone.Application (Example Interface)
 public interface IGameService
 {
-    Task<Game> GetGameByIdAsync(int gameId);
+    Task<Game> GetGameByIdAsync(int id);
+    Task<List<Game>> GetAllGamesAsync();
 }
 
 // InTheZone.Infrastructure (Example Implementation)
 public class GameService : IGameService
 {
-    private readonly IGameRepository _gameRepository; // From InTheZone.Infrastructure.Data
+    private readonly IGameRepository _repository; // From InTheZone.Infrastructure.Data
 
-    public GameService(IGameRepository gameRepository)
+    public GameService(IGameRepository repository)
     {
-        _gameRepository = gameRepository;
+        _repository = repository;
     }
 
-    public async Task<Game> GetGameByIdAsync(int gameId)
+    public async Task<Game> GetGameByIdAsync(int id)
     {
-        return await _gameRepository.GetGameByIdAsync(gameId);
+        return await _repository.GetByIdAsync(id);
+    }
+
+    public async Task<List<Game>> GetAllGamesAsync()
+    {
+        return await _repository.GetAllAsync();
     }
 }
+
+    // InTheZone.Infrastructure.Data (Example Repository Interface)
+    public interface IGameRepository
+    {
+        Task<Game> GetByIdAsync(int id);
+        Task<List<Game>> GetAllAsync();
+    }
+
+    // InTheZone.Infrastructure.Data (Example Repository Implementation)
+    public class GameRepository : IGameRepository
+    {
+        private readonly ApplicationDbContext _context; // From InTheZone.Infrastructure.Data
+
+        public GameRepository(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<Game> GetByIdAsync(int id)
+        {
+            return await _context.Games.FindAsync(id);
+        }
+
+        public async Task<List<Game>> GetAllAsync()
+        {
+            return await _context.Games.ToListAsync();
+        }
+    }

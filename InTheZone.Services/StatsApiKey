@@ -6,4 +6,22 @@ public MlbStatsApiProxy(IHttpClientFactory httpClientFactory, IConfiguration con
 
     // Use the secret key for secure access
     _apiKey = configuration["MLB_StatsAPI:ApiKey"];
+}    _httpClient = httpClientFactory.CreateClient("StatsApi");
+}
+
+public async Task<List<GameEvent>> GetHomeRunsByDateAsync(DateTime date)
+{
+    // Construct the API request URL with the date and API key
+    var requestUrl = $"/api/v1/gameEvents?date={date:yyyy-MM-dd}&apiKey={_apiKey}";
+
+    // Send the API request
+    var response = await _httpClient.GetAsync(requestUrl);
+
+    // Check for successful response
+    response.EnsureSuccessStatusCode();
+
+    // Deserialize the JSON response into a list of GameEvents
+    var homeRuns = await response.Content.ReadFromJsonAsync<List<GameEvent>>();
+
+    return homeRuns;
 }

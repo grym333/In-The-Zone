@@ -19,3 +19,7 @@
   </ItemGroup>
 
 </Project>
+  <ItemGroup>
+    <ProjectReference Include="..\InTheZone.Data\InTheZone.Data.csproj" />
+    <ProjectReference Include="..\InTheZone.Services\InTheZone.Services.csproj" />
+  </ItemGroup>

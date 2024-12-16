@@ -22,7 +22,7 @@ namespace InTheZone.Data.Repositories
 
     // ... other repository implementations
 
-        public class HomeRunRepository : IHomeRunRepository
+    public class HomeRunRepository : IHomeRunRepository
         {
             private readonly ApplicationDbContext _context;
 
@@ -40,4 +40,37 @@ namespace InTheZone.Data.Repositories
             }
             // ... Implement other methods as needed
         }
+    public class TeamRepository : ITeamRepository
+    {
+        private readonly ApplicationDbContext _context;
+
+        public TeamRepository(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<Team> GetTeamByIdAsync(int id)
+        {
+            return await _context.Teams.FindAsync(id);
+        }
+
+        // ... other methods for adding, updating, deleting teams
+    }
 }
+    public interface IPlayerRepository
+    {
+        Task<Player> GetPlayerByIdAsync(int id);
+        // ... other methods
+    }
+
+    public interface ITeamRepository
+    {
+        Task<Team> GetTeamByIdAsync(int id);
+        // ... other methods
+    }
+
+    public interface IHomeRunRepository
+    {
+        Task<List<HomeRun>> GetHomeRunsByDateAsync(DateTime date);
+        // ... other methods
+    }
