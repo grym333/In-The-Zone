@@ -30,3 +30,16 @@ public class GameVisualizationService : IGameVisualizationService
         _mlbStatsApiProxy = mlbStatsApiProxy;
         _logger = logger;
     }
+    public async Task<List<GameEvent>> GetHomeRunsForDateAsync(DateTime date)
+    {
+        try
+        {
+            return await _mlbStatsApiProxy.GetHomeRunsByDateAsync(date);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError($"Error fetching home runs for {date}: {ex.Message}");
+            throw; 
+        }
+    }
+}
