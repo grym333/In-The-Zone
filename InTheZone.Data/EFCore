@@ -1,0 +1,43 @@
+using InTheZone.Data.Entities;
+using Microsoft.EntityFrameworkCore;
+
+namespace InTheZone.Data.Repositories
+{
+    public class PlayerRepository : IPlayerRepository
+    {
+        private readonly ApplicationDbContext _context;
+
+        public PlayerRepository(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<Player> GetPlayerByIdAsync(int id)
+        {
+            return await _context.Players.FindAsync(id);
+        }
+
+        // ... other methods for adding, updating, deleting players
+    }
+
+    // ... other repository implementations
+
+        public class HomeRunRepository : IHomeRunRepository
+        {
+            private readonly ApplicationDbContext _context;
+
+            public HomeRunRepository(ApplicationDbContext context)
+            {
+                _context = context;
+            }
+
+            public async Task<List<HomeRun>> GetHomeRunsByDateAsync(DateTime date)
+            {
+                // Example query - adjust this based on how you associate GameEvents with dates
+                return await _context.HomeRuns
+                                    .Where(h => h.Game.GameDate.Date == date.Date)
+                                    .ToListAsync();
+            }
+            // ... Implement other methods as needed
+        }
+}

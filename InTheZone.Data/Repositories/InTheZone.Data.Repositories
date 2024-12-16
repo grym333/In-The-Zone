@@ -1,0 +1,23 @@
+// InTheZone.Data.Repositories
+using InTheZone.Data.Entities;
+
+namespace InTheZone.Data.Repositories
+{
+    public interface IPlayerRepository
+    {
+        Task<Player> GetPlayerByIdAsync(int id);
+        Task<List<Player>> GetAllPlayersAsync();
+        // ... other methods for adding, updating, deleting players
+    }
+
+    public interface ITeamRepository
+    {
+        Task<Team> GetTeamByIdAsync(int id);
+        Task<List<Team>> GetAllTeamsAsync();
+    }
+    public interface IHomeRunRepository
+    {
+       Task<List<HomeRun>> GetHomeRunsByDateAsync(DateTime date);
+    }
+    // ... other repository interfaces
+}

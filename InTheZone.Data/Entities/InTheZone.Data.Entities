@@ -1,5 +1,64 @@
 namespace InTheZone.Data.Entities
 {
+    public class Player
+    {
+        public int Id { get; set; } // Primary Key
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string FullName { get; set; } // Add this property for the full name
+        public int JerseyNumber { get; set; }
+        public DateTime BirthDate { get; set; }
+        public string Position { get; set; }
+        // ... other properties based on your JSON example
+        
+        public int TeamId { get; set; }
+        public Team CurrentTeam { get; set; }
+
+    }
+
+    public class Team
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string City { get; set; }
+        // ... other properties ...
+        public List<Player> Players { get; set; }
+    }
+
+    public class Game
+    {
+        public int Id { get; set; }
+        public DateTime GameDate { get; set; }
+        public int HomeTeamId { get; set; }
+        public Team HomeTeam { get; set; }
+        public int AwayTeamId { get; set; }
+        public Team AwayTeam { get; set; }
+        // ... other properties ...
+        public List<HomeRun> HomeRuns { get; set; }
+    }
+    
+    public class HomeRun
+    {
+        public int Id { get; set; } 
+        public int GameId { get; set; }
+        public int PlayerId { get; set; }
+        public string Team { get; set; } // Could also link to a Team entity
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public double ExitVelocity { get; set; }
+        public double LaunchAngle { get; set; }
+        public double HitDistance { get; set; }
+        public string VideoUrl { get; set; }
+        public string Opponent { get; set; }
+        public int Inning { get; set; }
+        public bool IsHomeTeamBatter { get; set; }
+        // Relationships
+        public Game Game { get; set; }
+        public Player Player { get; set; }
+    }
+    
+
+    // ... other entity classes for Pitch, Inning, etc.
     public class GameEvent
     {
         public DateTime GameDate { get; set; }

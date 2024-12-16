@@ -1,0 +1,9 @@
+private readonly IConfiguration _configuration;
+
+public MlbStatsApiProxy(IHttpClientFactory httpClientFactory, IConfiguration configuration)
+{
+    // ... existing code ...
+
+    // Use the secret key for secure access
+    _apiKey = configuration["MLB_StatsAPI:ApiKey"];
+}

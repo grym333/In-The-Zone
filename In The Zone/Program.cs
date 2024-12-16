@@ -29,4 +29,18 @@ public class Program
         app.MapRazorPages();
         await app.RunAsync();
     }
+    // In Program.cs or Startup.cs
+public void ConfigureServices(IServiceCollection services)
+{
+    // ... other services ...
+
+    services.AddDbContext<ApplicationDbContext>(options =>
+        options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); 
+    services.AddScoped<IPlayerRepository, PlayerRepository>();
+    services.AddScoped<ITeamRepository, TeamRepository>();
+    // Add more repository registrations here.
+     services.AddScoped<IHomeRunRepository, HomeRunRepository>();
+    services.AddSingleton<IConfiguration>(Configuration); // Add configuration
+    // ... other services ...
+}
 }

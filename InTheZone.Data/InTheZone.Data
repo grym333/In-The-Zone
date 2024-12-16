@@ -1,0 +1,27 @@
+using InTheZone.Data.Entities;
+using Microsoft.EntityFrameworkCore;
+
+namespace InTheZone.Data
+{
+    public class ApplicationDbContext : DbContext
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) 
+            : base(options)
+        {
+        }
+
+        public DbSet<Player> Players { get; set; }
+        public DbSet<Team> Teams { get; set; }
+        public DbSet<Game> Games { get; set; }
+        // Add more DbSets for your other entities.
+        public DbSet<HomeRun> HomeRuns { get; set; } 
+        
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            // Configure relationships, indexes, keys, etc.
+        }
+    }
+
+    JerseyNumber
+}
