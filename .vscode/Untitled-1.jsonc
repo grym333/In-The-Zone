@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "Deploy Cloud Function",
+            "type": "cloudcode.cloudfunctions",
+            "request": "launch",
+            "functionName": "In-The-Zone",
+            "gen": "GEN_2",
+            "revision": "",
+            "entryPoint": "index",
+            "testInput": "{\"name\":\"test\"}"
+        }
+    ]
+}
+
