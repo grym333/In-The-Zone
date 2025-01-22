@@ -16,5 +16,6 @@
     "sonarlint.connectedMode.project": {
         "connectionId": "grym333",
         "projectKey": "grym333_In-The-Zone"
-    }
+    },
+    "files.autoSave": "onWindowChange"
 }
